@@ -1,0 +1,9 @@
+<!-- repeat -->
+<div class="container-images">
+  <div class="images__dates" *ngFor="let nos of nos" [style.background-color]= "nos.color">
+    <a class="images__show" routerLink="/nos/{{nos.id}}">
+        <img class="img__show" [src]="nos.image" [alt]="nos.name">
+        <p class="img__text">{{nos.date}} JUL</p>
+    </a>
+  </div>
+</div>

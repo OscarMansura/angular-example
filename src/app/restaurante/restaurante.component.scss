@@ -1,0 +1,40 @@
+.restaurante__title{
+    color: black;
+}
+
+.grid-restaurante{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.restaurant{
+    margin: 0;
+    padding: 0;
+}
+
+.restaurant__image{
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    display: block;
+}
+
+.restaurante__subtitle{
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    display: block;
+}
+
+.restaurante__name{
+    
+}
+
+.restaurant__icon{
+  
+}

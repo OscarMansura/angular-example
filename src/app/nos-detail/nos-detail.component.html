@@ -1,0 +1,10 @@
+<div *ngIf="nos">
+
+    <h2>{{nos.name | uppercase}}</h2>
+    <div>{{nos.id}}</div>
+    <div>
+      <label for="nos-name">Nos Date: </label>
+      <input id="nos-name" [(ngModel)]="nos.name" placeholder="name">
+    </div>
+  
+  </div>

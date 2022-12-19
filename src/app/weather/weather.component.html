@@ -1,0 +1,42 @@
+<div class="weather">
+    <div class="weather__header">
+        <i class="icofont-location-pin"></i>
+        <select (change)="onChangeCity($event.target)" name="weather_city" class="weather__city">
+            <option *ngFor="let city of cities" [value]="city.latitude + ',' + city.longitude">{{city.name}}</option>
+        </select>
+    </div>
+    <div class="weather__info">
+        <div class="weather__icon">
+            <i class="icofont-cloudy"></i>
+        </div>
+        <p class="weather__description">Cloudy</p>
+        <p class="weather__temp">28</p>
+        <div class="weather__extra">
+            <p class="weather__wind">
+                <i class="icofont-wind"></i>
+                <span>8</span> km/h
+            </p>
+            <p class="weather__precipitation">
+                <i class="icofont-water-drop"></i>
+                <span>47</span>%
+            </p>
+        </div>
+    </div>
+    <div class="weather__week">
+        <!-- repeat for each weekday-->
+        <!--
+        <div class="day">
+            <p class="day__date">Today, 18 Sep</p>
+            <div class="day__info">
+            <span class="day__time">9:00 AM</span>
+            <span class="day__icon">
+                <i class="icofont-cloudy"></i>
+            </span>
+            <span class="day__temp">28</span>
+            </div>
+        </div>
+        -->
+
+        <!-- <app-forecast></app-forecast> -->
+    </div>
+</div>

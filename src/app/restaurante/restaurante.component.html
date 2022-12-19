@@ -1,0 +1,16 @@
+<h2 class="restaurante__title">Restaurantes para comer fora</h2>
+
+<ul class="grid-restaurante">
+    <li class="restaurant" *ngFor="let restaurante of restaurantes">
+        <img class="restaurant__image" [src]="restaurante.image" [alt]="restaurante.id">
+        <div>
+            <a>
+                <div class="restaurante__subtitle">
+                    <h3 class="restaurante__name">{{restaurante.id}}</h3>
+                    <span class="restaurant__icon">4.2<i class="icofont-star"></i></span>
+                </div>
+                <p>Aturada</p>
+            </a>
+        </div>
+    </li>
+</ul>

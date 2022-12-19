@@ -1,0 +1,33 @@
+<div class="picker">
+    <div class="picker__intro">
+        <h2 class="picker__headline">Seleciona ingredientes:</h2>
+        <p>O número associado ao ingrediente refere-se a porções, não unidades. Os molhos (excepto tomate e oregãos) são cobrados como ingrediente extra.</p>
+    </div>
+  
+    <ul class="picker__ingredients">
+
+        <!-- repeat -->
+        <li class="ingredient" [attr.data-amount]="ingredient.quantity" [attr.data-price]="ingredient.price" *ngFor="let ingredient of ingredients">
+            <div class="ingredient__column">
+                <img class="ingredient__image" [src]="ingredient.image" [alt]="ingredient.name">
+                <span class="ingredient__counter">x{{ingredient.quantity}}</span>
+                <span class="ingredient__name">{{ingredient.name}}</span>
+            </div>
+            <div class="ingredient__column">
+                <button (click)="onRemove(ingredient)" class="ingredient__control ingredient__control--remove">
+                    <i class="icofont-minus"></i>
+                </button>
+                <button (click)="onAdd(ingredient)" class="ingredient__control ingredient__control--add">
+                    <i class="icofont-plus"></i>
+                </button>
+            </div>
+        </li>
+    </ul>
+
+    <p class="picker__total">Total: <span class="picker__price">{{total | currency: 'EUR'}}</span></p>
+</div>
+
+
+
+
+
