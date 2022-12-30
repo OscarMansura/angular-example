@@ -17,7 +17,7 @@
 
 .img__text {
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -28,4 +28,5 @@
 .img__show {
     width: 100%;
     display: block;
+    object-fit: cover;
 }
