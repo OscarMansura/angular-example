@@ -5,16 +5,17 @@
             <option *ngFor="let city of cities" [value]="city.latitude + ',' + city.longitude">{{city.name}}</option>
         </select>
     </div>
-    <div class="weather__info">
+
+    <div class="weather__info" *ngIf="currentWeather">
         <div class="weather__icon">
             <i class="icofont-cloudy"></i>
         </div>
-        <p class="weather__description">Cloudy</p>
-        <p class="weather__temp">28</p>
+        <p class="weather__description">{{getWeatherDescription(currentWeather.weathercode)}}</p>
+        <p class="weather__temp">{{currentWeather.temperature}}</p>
         <div class="weather__extra">
             <p class="weather__wind">
                 <i class="icofont-wind"></i>
-                <span>8</span> km/h
+                <span>{{currentWeather.windspeed}}</span> km/h
             </p>
             <p class="weather__precipitation">
                 <i class="icofont-water-drop"></i>

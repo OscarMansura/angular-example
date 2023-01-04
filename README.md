@@ -1,5 +1,22 @@
 # AngularExample
 
+Hello
+
+Here is a Angular example, that i make when i was taking the course Front End Web Developer with Flag.
+
+We did a navbar with routes to the be more quick changing the diferent parts of the navigation.
+
+Heroes is how i learn Angular, using the example of the Angular.io Tutorial: Tour of Heroes. 
+
+Pizza i did a ingredient picker, that you can choose the things that you want or take out the items if you change you idea. 
+
+Dashboard using spotify webpage a example to make a front page.
+
+Restaurante making a exmaple of a GPS restaurants using the service.
+
+Apple just to make a part of a page from Apple.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
 
 ## Development server

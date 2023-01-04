@@ -18,11 +18,10 @@ const routes: Routes = [
   { path: 'pizza', component: PizzaComponent },
   { path: 'nos', component: NosComponent },
   { path: 'weather', component: WeatherComponent },
-  { path: 'restaurante', component: RestauranteComponent},
-  { path: 'detail/:id', component: RestauranteDetailComponent},
-  { path: 'apple', component: AppleComponent},
-  { path: 'nos/:id', component: NosDetailComponent}
-
+  { path: 'restaurante', component: RestauranteComponent },
+  { path: 'detail/:id', component: RestauranteDetailComponent },
+  { path: 'apple', component: AppleComponent },
+  { path: 'nos/:id', component: NosDetailComponent }
 ];
 
 @NgModule({
